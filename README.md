@@ -1,2 +1,3 @@
-# WanderVision
-Enhancing dementia Care Using AR and AI, a project started in order to provide assistance to dementia patients. It is still in early phase. 
+## AR Indoor Navigation with Unity 6 and ARCore
+
+Youtube Link: https://youtu.be/G3khfWQUa78
