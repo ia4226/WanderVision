@@ -2,3 +2,4 @@ live stream and detections
 - needed to set up python 3.9 virtual environment for live stream.
 - python 3.12 does not support dlib = 19.24.6 and numpy = 2.0+ for face recognition
 - downgraded from 3.12 to 3.9 in virtual environment. 
+- installed dlib =19.24.0 and numpy = 1.22 and face recognition in terminal of PyC and opencv-python, packages can be added from PyC by clicking "ctrl + ,"
