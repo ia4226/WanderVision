@@ -1,1 +1,7 @@
-
+why haar cascade appears to be better?
+1. Continuously captures frames from the webcam in a live video stream.
+2. offers user interaction by 'c' capturing and 'q' quiting. 
+3. real time interaction
+4. handles multiple images without restarting.
+5. new photo name each time. 
+6. auto appends in order to avoid overwriting.
