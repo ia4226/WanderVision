@@ -5,4 +5,4 @@ live stream and detections
 - installed dlib =19.24.0 and numpy = 1.22 and face recognition in terminal of PyC and opencv-python, packages can be added from PyC by clicking "ctrl + ,"
 
 Faster face detection
-- operates less loops. lesser frames, improves performance and latency for a single face, while aslo detecting unown face.
+- operates less loops. lesser frames, improves performance and latency for a single face, while aslo detecting unown face. 
