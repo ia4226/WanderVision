@@ -8,4 +8,5 @@ Faster face detection
 - operates less loops. lesser frames, improves performance and latency for a single face, while aslo detecting unown face. 
 
 integration
-1. automation of the process leads to faster, more error prone process.
+  1. automation of the process leads to faster, more error prone process.
+  2. dynamically appending items in dataset helps in improving and managing scalability.
