@@ -1,0 +1,2 @@
+gpu = false, have to use cpu for work
+try cuda.
