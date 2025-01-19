@@ -9,6 +9,6 @@ for object detection: numpy 1.26.0
 
 Suggestion for WanderVision Vector Databse:
 1. implement image saving in one of the schema classes
-2. add class to save landmark
-3. add class to save obstacles
+2. add class to save landmark, done needs to be better
+3. add class to save obstacles, done needs to be better
 4. change measure of direction/distance from Euclidian to Djikstra or A*
