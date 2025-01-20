@@ -7,7 +7,7 @@ for face recognition, detection and real-time: numpy 1.22.0
 for object detection: numpy 1.26.0
 
 
-Suggestion for WanderVision Vector Databse:
+Suggestion for WanderVision Vector Databse: https://belhthdprsuurfecdtjqa.c0.asia-southeast1.gcp.weaviate.cloud
 1. implement image saving in one of the schema classes
 2. add class to save landmark, done needs to be better
 3. add class to save obstacles, done needs to be better
