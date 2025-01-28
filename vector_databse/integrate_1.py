@@ -9,8 +9,8 @@ model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-large")
 def connect_to_weaviate():
     url = "https://belhthdprsuurfecdtjqa.c0.asia-southeast1.gcp.weaviate.cloud"
     auth = AuthClientPassword(
-        username="iarhatia@gmail.com",
-        password="Shrikrishna#12",
+        username="<ADD_USERNAME>",
+        password="<ADD_PASSWORD>",
     )
     return weaviate.Client(url=url, auth_client_secret=auth)
 
