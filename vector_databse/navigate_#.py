@@ -13,7 +13,7 @@ def create_class_schema(class_name, description, properties):
     }
 
 # google API
-GOOGLE_API_KEY = "AIzaSyCpBxrwDuqFE2Amrcaa4Dng9gfAyrNoVtQ"  # Replace with your Google Maps API Key
+GOOGLE_API_KEY = "<Enter API key>"  # Replace with your Google Maps API Key
 GOOGLE_GEOCODING_URL = "https://maps.googleapis.com/maps/api/geocode/json"
 GOOGLE_MAPS_BASE_URL = "https://maps.googleapis.com/maps/api/directions/json"
 
@@ -45,10 +45,10 @@ schemas = [
 # weaviate instance
 def connect_to_weaviate():
 
-    url = "https://qbkes3xfqvs8lqxdvpdzgw.c0.asia-southeast1.gcp.weaviate.cloud"  #  actual Weaviate URL
+    url = "<ADD_URL>"  #  actual Weaviate URL
     auth = AuthClientPassword(
-        username="iarhatia@gmail.com",
-        password="Shrikrishna#12",
+        username="<ADD_USERNAME>",
+        password="<ADD_PASSWORD>",
     )
     return weaviate.Client(url=url, auth_client_secret=auth)
 
