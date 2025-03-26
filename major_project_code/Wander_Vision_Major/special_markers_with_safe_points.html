@@ -1,0 +1,404 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Google Maps - gmplot</title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyCpBxrwDuqFE2Amrcaa4Dng9gfAyrNoVtQ"></script>
+<script type="text/javascript">
+    function initialize() {
+        var map = new google.maps.Map(document.getElementById("map_canvas"), {
+            zoom: 15,
+            center: new google.maps.LatLng(12.820866, 80.048173)
+        });
+
+        var marker_icon_ADD8E6 = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAADI0lEQVRIia3WW0hTcRzA8e/ZWpKFkJiVS7B6qJTqxZFhFx/yZQ9iD0JIBZU9hA92kSCJCIMKoSuMohtlFyINU0y7SGZTs01qZc60m1JuWiNjM4eb2+lhO7XV5o7T38uB//n9Ppwfv///zxEYP9KANYAaUABeoB9oBjrDFQlh1jcARwFNwnw1KUtSiY2LY8Rup7fbjM3aD2AESoCGSKgAHBMEYX+mNkfI3VFIyrI0BCE47bP5Lfcu62ipqxFFUSwDDgBiKFQATs2YOato9wkd6VnZ4br7E+2NjzldXIjz1/AZYI8EKwNyilQxMYcPXb7NitVrI4IASQsXk6rJQF9bleH1eIaAF4FoElC9tfigKlObIwuUImG+mpgZsZian64DrgIOhf/drjlJC2K1W7ZPCJRCu3kbierkWGAX+LYJQE5Wbh7KaaqoUOU0Fetz8wByJFQJLE3TrI4KlCItPQNgKaBUACpgekKSelKov346oJLaRxTFsAVyIrBeAbgA13fL10mh/noX4JLOc1en4fmkUH99F+CV2q9pqq5gzO2OCvSMuWmqrgCogb9b6pzNahmuvXYxKrS2/BI2q2UYOAd/T9Qw4DAbn2tTNRkkqpNlg2ZjG7qSPXg9nn3Ak0AUwOD1euPbHtWtWpm5jvjEeRHBT+YOSgvyGXU6zwKl0nqoq+9GfOLc/LK7D5g9Z25Y0PFziOKN2disljvAJgKuPsU/uSJQ8OPbYIeuZO+4e/di6QFsVksPsCMQDIUCOIGtr/SNY/raqpDgm1Y9LXU1ADvxzSMoQqEAJuD8zZNHcbtcwa2IIrdOHweoBJ6FKg6HAhyxWS3OpurKoMVOQyvv37wSCRjMRNBvQHn9zStBiw9vXwff1umIBgW40PvOTF93FwAjDjvGJw8BroxXFAl9CfQYGuoBMDU/xT066sR/HKNFAe6/bvXNw9TSBNBIiIlPFG380GFizO2WbqL/fh6iQY1ul4tuUzuDX/oAIt6RctABwGZoeIAoih7gtYwaWWFclLpcBD7KSZbzpQC2AV/rfVOJ/hhx2AEcU4kO+p+WqUSt/mevnOTfvFolZSBTatAAAAAASUVORK5CYII=",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.822941, 80.044764),
+            icon: marker_icon_ADD8E6,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.639685, 77.381827),
+            icon: marker_icon_ADD8E6,
+            map: map
+        });
+
+        var marker_icon_FF0000 = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAACBklEQVRIia3VzUtUURgH4GdG/AiyZZShtWgXUbSIFtGqRYtqWRLhXyBYf0K6MaJQ2gRtayHtijYpleHKSCgIcRHoIiOSKEzLKea0OOeqTfPlzPzg5Qwz9zz3nXPvPTeneo7gNA4gjyI+Ygbva8z9L2cxi9BHOE+4msY+gliz6biayWE0R7GfMEcoEkJJzRH6CbnY+WiaVxEc6yY8KQOVq8eE7tj1WCV4qIswUyeY1QyhK8JDpWAP1m7vEMzqTkTXkrOZkYOEQoNogXAowiPE2wQuDqC9nktZJu0YSE72XRs2phrsMqup2OkG2vLpRB19DXaZJc3vQHv294Um0e3z8yigsNQkmuYXUMie5/npJtE0fz55YLiXsNHELdUbV2B4+4n2Y/Vmg+itCK4m558MdhBe7hCcJnRGdLDS0ox3E17XCb4h7IngeLX1zuFhD2G5BriytY4Tqmx9WXbh3Tnl99KsLkdwAbtrgVmO4/eDCuCkzd3/TL1glru9hF8lYJFwMoKPdgrCXqzfL0GfR7CIo42gcO9YCXopolONgnAC4W0Cv9l8dVxpBoWFGwmdiOC6Glc8X+3HlKeT6cOzOLzAjyaaBBc602ZzOHZ6vVkQ9kl7Qi6ip1qBwpdrEfwjPnFVU8+awuKrOC7hZ6vQlQ9baM3Ui379HsfVVqKf07jcSvRTGhfrOfgvIP3ECS77BDoAAAAASUVORK5CYII=",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.820866, 80.048173),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.834150, 80.056670),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.842365, 80.057631),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.796141, 80.026254),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.795960, 80.026544),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.793862, 80.027469),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.795309, 80.021684),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.822942, 80.047964),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.822880, 80.044020),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.825888, 80.039520),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.825888, 80.039520),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.819229, 80.039847),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.824930, 80.046948),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.819952, 80.037505),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.823331, 80.047817),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.823042, 80.047937),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.828582, 80.045178),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.818424, 80.037759),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.820866, 80.048173),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(12.823590, 80.049716),
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "SRM clock tower, Chengalpettu, Tamil Nadu - Safe Point",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.822941, 80.044764),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Ashiana Greens - Safe Point",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.639685, 77.381827),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "SRM Medical College Hospital And Research Centre - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.820866, 80.048173),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Informh Home - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.834150, 80.056670),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "K.R. Hospital - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.842365, 80.057631),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Punnagai Dental Clinic - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.796141, 80.026254),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Annam Dental Clinic - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.795960, 80.026544),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Naturo Shifa Homoeopathic Clinic - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.793862, 80.027469),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Sri Surya Hospital - Diabetes &Thyroid care - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.795309, 80.021684),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "SRM General Hospital - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.822942, 80.047964),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Institute Of Cardiac Sciences - Dr.T.R.Muralidharan - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.822880, 80.044020),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "clinical - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.825888, 80.039520),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "VGN Appartments - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.825888, 80.039520),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "SRI KRISHNA CLINIC - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.819229, 80.039847),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Dr. Arun Kumar - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.824930, 80.046948),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "VSG POTHERI CLINIC AND PHARMACY - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.819952, 80.037505),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "SRM Global Hospitals - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.823331, 80.047817),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Institute of Gastro and Liver Sciences - SRM Global Hospitals - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.823042, 80.047937),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "rajesh dental clinic - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.828582, 80.045178),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "DR.Sathish Clinic - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.818424, 80.037759),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Dr. Aneesha D- Obstetrician and Gynecologist in Guduvanchery - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.820866, 80.048173),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "SRM Medical Dean Quarters - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(12.823590, 80.049716),
+            map: map
+        });
+
+    }
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%;" />
+</body>
+</html>

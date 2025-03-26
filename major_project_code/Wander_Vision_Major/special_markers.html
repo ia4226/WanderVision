@@ -1,0 +1,365 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Google Maps - gmplot</title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyCpBxrwDuqFE2Amrcaa4Dng9gfAyrNoVtQ"></script>
+<script type="text/javascript">
+    function initialize() {
+        var map = new google.maps.Map(document.getElementById("map_canvas"), {
+            zoom: 15,
+            center: new google.maps.LatLng(28.634554, 77.333075)
+        });
+
+        var marker_icon_808080 = {
+            url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAiCAYAAACwaJKDAAAABmJLR0QA/wD/AP+gvaeTAAAC90lEQVRIia2VTUgUYRjHf7PjuhTIDOFB6zCgNAh+7G0TjE556dDFs12ygyeJIOgWdQi6RF2MDpF5ixA2SAjagkjSTaJ1lXUXR3YQXa1Ih/Vj1Zl9Ozhbu7a64+r/8jLP+/x/wzPv88wrcbhagYvAOcAH5IFF4DMwU8H7ny4DUUAoiiJ0XRcdHR1C13WhKIoAhLt/uZxZKvP8QJKk262trVJXVxcNDQ1IUmlaJpNhbGyMmZkZIYR4CNxxX/QfVAIeBQKBgZ6eHnRdr1hOMplkZGSE7e3tx8DNAlguyhmoqam529vbS1NTU0UgQH19PZqmEY/HO/P5/CowUQw9C4S7u7v9bW1tnoAFKYqC3+/HMIxLwAsg63P3+lVVPR0KhY4ELCgUCqGq6mmgH/baBOBqMBhEluWDnYdIlmWCwSDA1QJUBlo0TasKWJDrbwFkH+AHahVFORbU9dcCfl+F3KrkA3aAnbW1tWOBXP8OsFOY54RpmseCuv4EkC+U/yYWi+E4TlVAx3GIxWIAb+BfSw1alrU+Pj5eFXRiYgLLstaBQfg3UetA1jTNK5qmoaqqZ6BpmoTDYfL5/C3gQzEUICqEOJNIJC40NzdTV1dXEZjJZBgeHmZ3d/cJcK8Q3z9C7xzHOZ9Kpdrb29sJBAIHAjc3NxkaGmJjY+MV0Fe8t79PBdCXzWbj4XAYIQQHaXR0FMuyUsB1iv6l5aAAW8C1ubk5Ox6PlwXOz88zPT0NcIO98yjRQRP1HXgaiUSwbbu0FCGIRCIAr4FP5cyHjel9y7K2pqamSoLpdJrFxUVB0cEcBfoDeBmNRkuCk5OTsNc65b9NBSjAs+XlZVZWVgDI5XIkk0mA54eZKkG/AanZ2VkADMPAtu0t3HGsFgrw1jCMv1DgI2VO/KjQj0tLSziOQzqdBnhfyeAF+tW2bRYWFlhdXQX44sHjST87OzsFYAOnTgr6tbGxUQCGl2Svd9Qvt3RP14NX6O9cLgeQPUnoirsunSQ0465pL8l/AF1mJF8KI6v5AAAAAElFTkSuQmCC",
+            labelOrigin: new google.maps.Point(10, 11)
+        };
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.634554, 77.333075),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.652619, 77.360136),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.641460, 77.366233),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.641795, 77.362290),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.641782, 77.364802),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.626382, 77.372662),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.655959, 77.365746),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.646022, 77.380854),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.641468, 77.379747),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.641851, 77.379290),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.644094, 77.376725),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.646807, 77.374188),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.637146, 77.375779),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.646936, 77.370772),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.637834, 77.371173),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.646419, 77.368468),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.640115, 77.368565),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.641699, 77.367109),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.652155, 77.410390),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(28.648271, 77.364727),
+            icon: marker_icon_808080,
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Max Super Speciality Hospital, Vaishali - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.634554, 77.333075),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Yashoda Super Speciality Hospital, Vasundhara - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.652619, 77.360136),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Intermed Scope Hospital - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.641460, 77.366233),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Eternity Hospital- Dr. Arvind Jain and Dr. Rashmi Jain - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.641795, 77.362290),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Gayatri Nawal Hospital - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.641782, 77.364802),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Sara Technologies Pvt. Ltd. - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.626382, 77.372662),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Bhagat surgical clinic - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.655959, 77.365746),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Dr Rohit Nagar - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.646022, 77.380854),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Physiohelp Physiotherapy - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.641468, 77.379747),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Shanti Gopal Hospital - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.641851, 77.379290),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Dental Reich - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.644094, 77.376725),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Sai Sanjeevani Hospital - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.646807, 77.374188),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Dr. Anita Singla - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.637146, 77.375779),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Yash Medi Equipments & Engineers - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.646936, 77.370772),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Lotus Diabetes Center - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.637834, 77.371173),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "r2 Hemostasis Diagnostics India Private Ltd ( Subsidiary of r2 Diagnostics Inc USA) - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.646419, 77.368468),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Fortis Healthworld - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.640115, 77.368565),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Dr Aruna Saxena - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.641699, 77.367109),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Narayan Hospital - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.652155, 77.410390),
+            map: map
+        });
+
+        new google.maps.Marker({
+            label: {
+                text: "Sai Sanjeevani Hospital - Hospital",
+                color: "#000000",
+                fontWeight: "bold"
+            },
+            icon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEX/TQBcNTh/AAAAAXRSTlMAQObYZgAAAApJREFUeJxjYgAAAAYAAzY3fKgAAAAASUVORK5CYII=",
+            position: new google.maps.LatLng(28.648271, 77.364727),
+            map: map
+        });
+
+    }
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+    <div id="map_canvas" style="width: 100%; height: 100%;" />
+</body>
+</html>
